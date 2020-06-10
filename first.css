@@ -1,0 +1,17 @@
+.mythri {
+    color: red !important;
+}
+div {
+    display: inline;
+    display: inline-block;
+    width: 49%;
+}
+
+span {
+    display: block;
+}
+
+.mythri-bgc {
+    /*visibility: hidden;*/
+    display: none;
+}
