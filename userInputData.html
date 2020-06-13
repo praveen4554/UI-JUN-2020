@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <fieldset>
+            <legend>INPUT Elements</legend>
+        <form>
+            <!--<label>UserName:</label>-->
+            <input type="text" size="300px" value="praveen" placeholder="enter user name" readonly required/>
+            <input type="password" placeholder="enter password"/>
+            <input type="email" placeholder="enter email address"/>
+            <input type="number" placeholder="enter age"/>
+            <input type="date" placeholder="enter date of birth" min="1980-01-01" max="2000-12-12"/>
+            <label>Gender:</label><br/>
+            <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female<br/>
+            <input type="checkbox" checked>Car
+            <input type="checkbox">Car1
+            <input type="checkbox">Car2
+            <input type="checkbox">Car3
+            <input type="datetime-local"/>
+            <input type="search"/>
+            <input type="tel"/>
+            <input type="button" value="reset username"/>
+            <select multiple>
+                <option>CAR</option>
+                <option>BIKE</option>
+                <option selected>CYCLE</option>
+            </select>
+            <input type="month"/>
+            <input type="file"/>
+            <input type="color"/>
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+        </fieldset>
+        <audio autoplay controls muted id="audio">
+            <source src="./sap-party.mp3" type="audio/mp3"/>
+        </audio>
+        <header>
+            UI
+        </header>
+        <section>
+            disccussions
+        </section>
+        <aside>
+            side 
+        </aside>
+        <footer>
+            @copyright
+        </footer>
+        <script>
+         var context = new AudioContext();
+            document.getElementById("audio").play();
+        </script>
+    </body>
+</html>
