@@ -1,0 +1,41 @@
+.center{
+	color: blueviolet;
+	margin:0px auto 10px 905px;
+}
+.amarTB caption{
+	color: red;
+	caption-side: top;
+	font-size: small;
+}
+.amarTB table{	
+	width:100%;	
+	border-collapse:collapse;
+	font-weight: bold;
+}
+.amarTB th{
+	background-color: rgb(104, 237, 241);
+	color: black;	
+}
+.amarTB th, td{
+	padding:10px; border:#000000 2px solid;
+}
+
+.amarTB tr:nth-child(odd){
+	background: #f5bfd5;
+}
+
+.amarTB tr:nth-child(even){
+	background:#8eb7ef;
+}
+.amarTB tr{
+	background:#eff302;
+}
+/* .amarTB tr:nth-child(3n+1){
+	background:red;
+}
+.amarTB tr:nth-child(1){
+	background:green;
+}
+ */
+
+
