@@ -1,0 +1,74 @@
+/*.container p {
+    background-color: red;
+}
+
+.container > p:nth-child(1) {
+    color: green;
+}
+
+.container > div > span {
+    color:blue;
+}
+p {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+div + p {
+    color: red;
+}
+
+div ~ p{
+    background-color: blue;
+}
+
+ul > li {
+    color: red;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: blue;
+}
+
+div:first-child {
+    background-color: red;
+}
+
+input:focus {
+    color: red;
+}
+
+div:last-child {
+    background-color: blue;
+}
+div:nth-child(2n+1){
+    background-color: red;
+}
+
+p::after {
+    content: 'remeber me'
+}
+p::before {
+    content: 'before'
+}*/
+p::first-line {
+    color: red;
+}
+p::first-letter {
+    color: blue;
+}
+p::selection {
+    color: green;
+}
