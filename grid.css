@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 20% 10%;
+    /*grid-template-rows: 20% 20% 30% 20% 10%;*/
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-gap: 5px;
+
+}
+
+.container div {
+    border: 1px solid;
+}
+/*.column{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: -ms-grid;
+}*/

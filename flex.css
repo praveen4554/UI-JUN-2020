@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap-reverse; 
+    /*justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    background-color: red;*/
+}
+.container div {
+    border: 1px solid;
+    padding: 5px;
+    /*width: 100px;
+    line-height: 75px;
+    text-align: center;*/
+   
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+div :nth-of-type(3) {
+    flex-shrink: 3;
+}
+

@@ -1,0 +1,19 @@
+.pos{
+    position: absolute;
+    top: 10px;
+    left:0;
+    /*width: 300px;
+    height: 200px;*/
+    border: 1px solid;
+    display: inline-block;
+}
+.pos1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid;
+    z-index: 1;
+}
+div {
+    z-index: -1;
+}
