@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+
+<html >
+	<head> 
+		<meta charset="utf-8">
+        <title>Amar Calculation</title>
+        <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+		<script type="text/javascript">
+
+			function myFunction() {
+
+				var na = document.getElementById("txt1").value;
+				var nb = document.getElementById("txt2").value;
+				var nc = document.getElementById("txt3").value;
+				na = parseFloat(na);
+				nb = parseFloat(nb);
+				nc = parseFloat(nc);
+				if (isNaN(na) || isNaN(nb) || isNaN(nc)) {
+				document.write('You did not supply three valid numbers');
+				}
+				else {
+				var sum = na+nb+nc;
+				var prod = na*nb*nc;
+				var avg = sum / 3;
+				var largest = na;
+				var smallest = na;
+
+				if ( nb > largest ) 
+					largest = nb;			
+				if ( nc > largest ) 
+					largest = nc; 			
+				if ( nb < smallest ) 
+					smallest = nb;			
+				if ( nc < smallest ) 
+					smallest = nc; 
+
+				result='<p> ' +na+ '+ '+nb +' + '+nc+'='+sum+'</p>';
+				result+='<p> ' +na+ '* '+nb +' * '+nc+'='+prod+'</p>';
+				result+='<p> The average of ' +na+ ', '+nb +', and '+nc+' is '+avg+'</p>';
+				result+='<p> The largest of ' +na+ ', '+nb +', and '+nc+' is '+largest+'</p>';
+				result+='<p> The smallest of ' +na+ ', '+nb +', and '+nc+' is '+smallest+'</p>';
+				result+='<br />';
+				// document.getElementById( "demo").innerHTML=sum;
+				result+='<table border="5"><tr> <td>Number</td> <td>Square</td> <td>Cube</td></tr>'; 
+					result+='<tr><td>' +na+'</td><td>' +square(na) +'</td>     <td>'+cube(na) +'</td></tr>'; 
+					result+='<tr><td>' +nb+'</td><td>' +square(nb) +'</td>     <td>'+cube(nb) +'</td></tr>';
+				    result+='<tr><td>' +nc+'</td><td>' +square(nc) +'</td>     <td>'+cube(nc) +'</td></tr>';
+                result+='</table>'; 
+				document.getElementById( "demo").innerHTML=result;
+				}
+				
+				
+				function square(inum) { 
+							return inum*inum;   
+					} 
+
+					function cube(inum){ 
+							return Math.pow(inum,3); 
+					} 
+
+			}
+		</script> 
+	</head>
+	<body>
+		<br/>
+		<br/>
+			Enter first number: <input type="text" id="txt1" name="text1"> 
+			Enter second number: <input type="text" id="txt2" name="text2">
+			Enter third number: <input type="text" id="txt3" name="text3">
+		<p>Click the button to calculate</p>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+	</body>
+</html>
