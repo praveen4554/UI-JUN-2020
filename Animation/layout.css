@@ -1,0 +1,46 @@
+
+div{
+    width:250px;
+    height:250px;
+    background-color:red;
+    display:inline-flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:10px;
+    flex-basis: auto;
+    position: relative;
+    animation-name:example;
+    animation-duration: 4s;
+}
+
+@keyframes example{
+0%{background-color:green; left: 0px;top: 0px;}
+25%{background-color:purple;left: 200px;top: 0px;}
+50%{background-color:orange;left: 200px;top: 200px;}
+75%{background-color:blue; left: 0px;top: 200px;}
+100%{background-color:blue; left: 0px;top: 200px;}
+
+
+
+}
+span{
+ border-radius:50%; 
+ background-color:yellow;
+ align-content: center;
+ height:100px;
+ width:100px;
+ border:1px solid ;
+ margin:0 auto;
+ display: block;
+ position: relative;
+ animation-name:bird;
+ animation-duration:5s;
+}
+
+@keyframes bird{
+
+from {background-color:blue;}
+to {background-color:yellow;}
+
+}
