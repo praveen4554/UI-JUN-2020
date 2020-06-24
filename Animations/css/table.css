@@ -1,0 +1,28 @@
+table{
+    width:70%;
+    margin:50px auto;
+    border-collapse: collapse;
+    font-size: 110%;
+
+}
+table td{
+    border:1.5px solid peachpuff;
+    color:whitesmoke;
+    padding: 5px;
+    border-collapse: collapse;
+
+}
+table th{
+    border:1.5px solid peachpuff;
+    text-shadow: 2px 2px black;
+    border-collapse: collapse;
+    text-align:left;
+    padding: 5px;
+    color:greenyellow;
+}
+table tr:nth-child(even){
+    color: rgb(144, 208, 238);
+}
+td:hover {
+	background-color:blue;
+	opacity: 1}
