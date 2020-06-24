@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+        <title>The Ocean Birds</title>
+        <link rel="stylesheet" href="CSS/layout.css"/>
+        <link rel="stylesheet" href="CSS/table.css"/>
+        
+    </head>
+        <body>
+	     <div class="container">
+		<h1><img src="images/logo.jpg" width="130" itemprop="headline" rel="bookmark"/>
+            The kingdom of Ocean Birds</h1>
+					<img class="imgTop" src="images/albatrosses.jpg"  onclick="playAudio1()" title="Click to Play"/> 
+                    <img class="imgTop" src="images/emperor.jpg"  onclick="playAudio1()" title="Click to Play"/>
+                    <img class="imgTop" src="images/seabirds.jpg"  onclick="playAudio1()" title="Click to Play"/>
+                </div>
+				<div class="bubble x1"></div>
+	<div class="content">
+            <h4>For More Reference Visit :<a href="https://www.youtube.com/watch?v=bk7McNUjWgw" title="How Flying Fish Picked Off From Above And Below">How Flying Fish Picked Off From Above And Below      
+                  </a></h4>
+    <table id="tableMain">
+                <tr>
+            <th> Albatrosses </th>
+            <th>Emperor Penguin </th>
+            <th>Sea Birds</th>
+            
+            </tr>
+            <tr>
+                    <tr>
+                            <td> The albatrosses are a family of large sea birds. Both "great albatrosses", the wandering albatross and royal albatross, have wingspans of up to 3.4 meters (11 feet)—the largest of any living bird.</td>
+                            <td>The emperor penguin is the largest and heaviest species of penguin, growing up to 1.2 meters (4 feet) tall. It is the only species of penguin to breed during the Antarctic winter.</td>
+                            <td>About 300 species of birds live on or near the ocean, feeding on fish and other marine life. They include penguins, skuas, gulls, guillemots, terns, puffins, auks, skimmers, albatrosses.</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td> Their wings are narrow and can lock in one position, enabling the birds to soar on ocean winds for days at a time, using little energy to cover great distances. </td>
+                            <td>The male protects the egg on top of its feet throughout the coldest months of winter while the female goes off to feed. Graceful swimmers, emperors gets about on the ice by sliding on their bellies. </td>
+                            <td>Some kinds dive into the water from the air, or from high rocks. Others skim over the surface, scooping up food. </td>
+                    </tr>
+                </tr>
+                    <tr>
+                        <tr>
+                            <td>Albatrosses have strong, hooked beaks, well-designed for catching their prey. They also have large, raised nostrils on the top of their beaks. </td>
+                            <td>The emperor penguin's feathers, together with a thick layer of fat under its skin, provide most of the protection it needs from the cold. Muscles hold the feathers erect when on land, trapping a layer of air next to the skin, giving additional insulation.</td>
+                            <td>Many sea birds gather in large colonies to breed, often laying just one egg.</td>
+                    </tr>
+                </tr>
+                        </tr>
+            
+        </table>
+
+        </div>
+    
+    <audio id="myaudio">
+                    <source src="Sounds/bensound-onceagain.mp3" type="audio/mp3">
+            </audio>
+<script>
+    var blnPlay=false;
+    var x=document.getElementById("myaudio");
+    function playAudio1()
+    {
+        if(blnPlay===false)
+        {
+            x.play();
+        }
+        else{
+        x.pause();
+    }
+    blnPlay=!blnPlay;
+    }
+</script>
+    </body>
+</html>
