@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Recommended Books</title>
+<!--Internal CSS of the webpage styling-->
+<style>
+	
+			body{ 
+		display: block;
+		margin: 0 auto;
+		text-align:center; 
+		color:Yellow; 
+		font-size:25px;
+		background-color:Teal;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		border: solid black 2px; 
+		} 
+
+</style> 
+      </head>   
+   <body>
+   <h2> Your Recommended Book </h2>
+   
+   </body>
+   <script type = "text/javascript">
+
+		var age = prompt("What is ur Age?"); <!-- Prompt to enter the age -->
+		age = parseInt(age);
+		<!--if-else condition with link to read the recommended book-->
+		if( age >= "0" && age<="14") {
+               document.write("<b><i>Hardy Boys</i></b></br>");
+			   document.write("Hardy Boys 01: The Tower Treasure (<a href='https://www.amazon.com/Hardy-Boys-01-Tower-Treasure-ebook/dp/B001R11C8A'>  Click here</a>)");
+            } else if( age >= "14" && age<="20" ) {
+               document.write("<b><i>Harry Potter</i></b></br>");
+			   document.write("Harry Potter: The Complete Collection(<a href='https://www.amazon.com/s?k=harry+potter+series&i=digital-text&ref=nb_sb_noss_2'>  Click here</a>)");
+            } else if( age >= "20" && age<="40" ) {
+               document.write("<b><i>The Immortals of Meluha</i> </b></br>");
+			   document.write("Amish Tripathi's The Immortals of Meluha (<a href='http://www.pdf-drive.com/PDF/842791f4c22ca07e66406b14f667a056.pdf'>Click here</a>)");
+            } 
+			else if( age >= "40" && age<="60" ) {
+               document.write("<b><i>The Little Old Lady Who Broke All the Rules</i></b></br>");
+			   document.write("Catharina Ingelman-Sundberg's novel(<a href='https://www.amazon.com/Little-Old-Lady-Broke-Rules-ebook/dp/B016UEKRSY/ref=sr_1_1?keywords=The+Little+Old+Lady+Who+Broke+All+the+Rules&qid=1573677916&s=digital-text&sr=1-1'>Click here</a>)");
+            } else if( age >= "60" && age<="80" ) {
+               document.write("<b><i>The Turn of the Key</i></b></br>");
+			   document.write("Ruth Ware's kindle edition (<a href='https://www.amazon.com/Turn-Key-Ruth-Ware-ebook/dp/B07HPCRC7Q/ref=sr_1_1?crid=19SVEB22OWBII&keywords=the+turn+of+the+key&qid=1573678012&s=digital-text&sprefix=TheTurn+%2Cdigital-text%2C365&sr=1-1'>Click here</a>)");
+            }
+			
+			else {
+               document.write("<b><i>A Man Called Ove!</i></b></br>");
+			   document.write("Fredrik Backman's novel Kindle edition (<a href='https://www.amazon.com/Man-Called-Ove-Novel-ebook/dp/B00GEEB730/ref=sr_1_1?keywords=a+man+called+ove&qid=1573678087&s=digital-text&sr=1-1'>Click here</a>)");
+            }
+	</script>
+	
+<html>
