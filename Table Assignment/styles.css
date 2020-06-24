@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(lightblue,rgb(72, 72, 148),lightblue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-attachment: fixed;
+}
+div > h2{
+color:navy;
+text-transform: capitalize;
+text-align: center;
+}
+.jumbotron{
+    background-color:lightsteelblue;
+    box-sizing: border-box;
+    box-shadow:5px 5px 5px 5px navy;
+    height:120px;
+}
+table{
+border:2px solid navy;
+padding: 5px;
+border-collapse: collapse;
+
+}
+th{
+    border:2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+text-align: center;
+padding:10px;
+}
+td{
+border:2px solid black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding:10px;
+text-align: center;
+
+}
+
+
+tr:nth-child(even){
+    background-color:rgb(205, 202, 207);
+}
+tr:nth-child(odd){
+    background-color:lightsteelblue;
+}
+::selection{
+color: darkred;
+}
