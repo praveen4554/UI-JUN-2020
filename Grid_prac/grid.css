@@ -1,0 +1,31 @@
+body {
+    margin: 40px;
+    background-color: #fff;
+    color: #444;
+    font: 1.4em Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid -ms-grid; 
+    
+  
+    -ms-grid-columns: 2fr 2fr 2fr 2fr;           
+    grid-template-columns: repeat(4, 2fr);
+  
+    -ms-grid-rows: 350px 50px;
+    grid-template-rows: 350px 50px;
+  
+    -ms-grid-gap: 8vw;
+    grid-gap: 8vw;
+    
+  }
+  
+  
+  @supports (display:grid -ms-grid) 
+   {
+    .container > *{
+    
+      width:auto;
+    }
+}
+
