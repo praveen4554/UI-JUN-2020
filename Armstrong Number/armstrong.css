@@ -1,0 +1,18 @@
+body{
+    background-color:peru;
+    text-align: center;
+    color:maroon;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.h1{
+    color:blue;
+    
+}
+
+.h3{
+    color:maroon;
+    text-align: center;
+}

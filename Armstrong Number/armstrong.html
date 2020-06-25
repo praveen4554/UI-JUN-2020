@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nature</title>
+        <link rel="stylesheet" href="armstrong.css" />
+    </head>
+    <body>
+        <h1>ARMSTRONG NUMBER</h1>
+        <h3>Enter the Number :</h3><input type="text" name="inputnum" maxlength="10" required />
+        <p align = center>
+            <button type="submit" onclick = "checkArmstrong()">Check the Value</button></p>
+   
+            <script>
+                function checkArmstrong(){
+                  var number;
+var Digits = number.length;
+var sum = 0;
+
+for (i = 0; i < Digits; i++) {
+  sum += Math.pow(number.charAt(i), numberOfDigits);
+}
+ 
+if (sum == number) {
+  document.write("The entered number is an Armstrong number.");
+  
+} else {
+  document.write("The entered number is not an Armstrong number.");
+}
+                }
+</script>
+</body> </html>
