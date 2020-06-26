@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<title>Javascript string types</title>
+<style>
+body{
+background-color: #fff;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size:1.25em;
+padding:5px;
+margin:5px;
+}
+h1{
+text-align:center;
+color:navy;
+text-transform: capitalize;
+}
+.jumbotron{
+background-color:lightblue;
+}
+h3{
+color:red;
+}
+ol{
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+    <div class="jumbotron">
+    <h1>JavaScript string types</h1>
+    </div>
+    <div>
+    <ol>
+    <li><h3 style="color:navy;"><em><b>charAt() Method</b></em></h3>
+    <p>The charAt() method returns the character at the specified index in a string:string.charAt(index)</p>
+    <p><input type="text" id = "word" placeholder="Enter any word"> <button onclick="myFunction()" class="btn btn-primary">Check</button></p>
+    <h3 id ="answer"></h3></li>
+    <li><h3 style="color:navy;"><em><b>str.split() Method</b></em></h3>
+    <p>The split() method is used to split a string into an array of substrings, and returns the new array.string.split(separator, limit)
+    <button onclick="second()" class="btn btn-primary">Check</button></p>
+    <h3 id ="secondone"></h3></li>
+    <li><h3 style="color:navy;"><em><b>str.IndexOf() Method</b></em></h3>
+    <p>The indexOf() method returns the position of the first occurrence of a specified value in a string. string.indexOf(searchvalue, start).
+    <button onclick="third1()" class="btn btn-primary">Check</button></p>
+    <h3 id ="thirdone"></h3></li>
+    <li><h3 style="color:navy;"><em><b>slice() Method</b></em></h3>
+    <p>slice() extracts a part of a string and returns the extracted part in a new string. slice(start, end)
+    <button onclick="fourth()" class="btn btn-primary">Check</button></p>
+    <h3 id ="fourthone"></h3></li>
+   <li><h3 style="color:navy;"><em><b>substring() Method</b></em></h3>
+    <p>substring() is similar to slice().The difference is that substring() cannot accept <b>negative indexes</b>.
+    <button onclick="fifth()" class="btn btn-primary">Check</button></p>
+    <h3 id ="fifthone"></h3></li>
+    <li><h3 style="color:navy;"><em><b>substr() Method</b></em></h3>
+    <p>The difference is that the second parameter specifies the length of the extracted part.substr(start, length)
+    <button onclick="sixth()" class="btn btn-primary">Check</button></p>
+    <h3 id ="sixthone"></h3></li>
+    <li><h3 style="color:navy;"><em><b>replace() method</b></em></h3>
+    <p id ="full">The replace() method replaces a specified value with another value in a string:/g flag (global match)</p>
+    <button onclick="seventh()" class="btn btn-primary">Check</button>
+    <h3 id ="seventhone"></h3></li>
+    <li><h3 style="color:navy;"><em><b>toUpperCase() and toLowerCase() method</b></em></h3>
+    <p>toUpperCase():A string is converted to upper case with toUpperCase().toLowerCase(): A string is converted to lower case with toLowerCase().
+    <button onclick="eigth()" class="btn btn-primary">Check</button></p>
+    <h3 id ="eigthone"></h3></li>
+	</ol>
+   </div>
+    <script>
+   document.getElementById("word").value;
+    function myFunction() {
+    var words =document.getElementById("word").value;
+    var str = words;
+    var ans = str.charAt(str.length-1);
+    document.getElementById("answer").innerHTML="The answer is " + ans;
+    }
+    function second(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var sec = str.split("");
+    document.getElementById("secondone").innerHTML="The answer is " + sec;
+    }
+    function third1(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var thir = str.indexOf("a");
+    document.getElementById("thirdone").innerHTML="The answer is " + thir;
+    }
+    function fourth(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var four = str.slice(2,7);
+    document.getElementById("fourthone").innerHTML="The answer is " + four;
+    }
+    
+    function fifth(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var five = str.substring(2,7);
+    document.getElementById("fifthone").innerHTML="The answer is " + five;
+    
+    }
+    function sixth(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var six = str.substr(2,5);
+    document.getElementById("sixthone").innerHTML="The answer is " + six;
+    }
+    function seventh(){
+    var words =document.getElementById("full").innerHTML;
+    var str = words;
+    var seven =str.replace("replace","Hello");
+    document.getElementById("seventhone").innerHTML="The answer is " + seven;
+    }
+    function eigth(){
+    var words =document.getElementById("word").value;
+    var str = words;
+    var eigth =str.toUpperCase();
+    document.getElementById("eigthone").innerHTML="The answer is " + eigth;
+    }
+ </script>   
+</body>
+</html>
