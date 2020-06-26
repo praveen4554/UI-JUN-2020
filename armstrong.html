@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amstrong Number</title>
+</head>
+<body>
+<script>
+var c = prompt("Enter any number");
+var sum = 0;
+var result = 0;
+
+var d = c.toString().split('');
+
+alert(d+ " is converted to an array of substrings for easy calculation");
+
+for(var i = 0; i<d.length; i++) {
+result = result + Math.pow(d[i], 3);// this code is applied to three digits numbers
+sum = sum + Math.pow(d[i], 4); // this code is applied to four digits numbers
+
+}
+if(sum == c || result == c) {
+    alert(c+" is an Armstrong Number")
+}
+else {
+    alert(c+" is not an Armstrong Number")
+}   
+    
+</script>
+</body>
+</html>
