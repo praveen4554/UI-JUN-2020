@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[10,20,20,20,50,50,50,50,05,0,60,06,07,07,07,70,10,30];
+        var b=[];
+
+        for(var i of a){
+            createArray(i);
+        };
+
+        function createArray(j){
+            for(var i = 0; i <= b.length; i++){
+                if(b.indexOf(j) === -1){ 
+                    b.push(j);
+                }
+            }
+        }
+        console.log(b);
+    </script>
+</body>
+</html>
