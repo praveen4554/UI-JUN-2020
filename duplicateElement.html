@@ -9,7 +9,6 @@
     <script>
         var a=[10,20,20,20,50,50,50,50,05,0,60,06,07,07,07,70,10,30];
         var b=[];
-
         for(var i of a){
             createArray(i);
         };
@@ -22,6 +21,22 @@
             }
         }
         console.log(b);
+        var c="praveeeen";
+        var d=c.split("");
+        var e=[];
+        for(var i of d){
+            createArray2(i);
+        };
+
+        function createArray2(j){
+            for(var i = 0; i <= e.length; i++){
+                if(e.indexOf(j) === -1){ 
+                    e.push(j);
+                }
+            }
+        }
+        console.log(e);
+
     </script>
 </body>
 </html>
