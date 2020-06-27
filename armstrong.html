@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=153;
+        var b=143;
+        function checkArmstrong(n){
+            var sum=0;
+            n=n.toString().split("");
+            for(let i of n){
+                sum=sum+Math.pow(i,n.length);
+            };
+            n=n.join("");
+            n=parseInt(n);
+            if(sum===n){
+                console.log("Yesss!!!!! "+n+" is armstrong")
+            }
+            else{
+                console.log("No!!!!!!!! "+n+" is not armstrong");
+                
+            };
+        };
+        checkArmstrong(a);
+        checkArmstrong(b);
+    </script>
+</body>
+</html>
