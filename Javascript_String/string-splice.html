@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to add elements to the array.</p>
+
+<button onclick="function_splice()">Click to Add</button>
+
+<p id="addfruit"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("addfruit").innerHTML = fruits;
+
+function function_splice() {
+  fruits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("addfruit").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
