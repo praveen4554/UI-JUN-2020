@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+<script>
+var obj={model:"BMW",
+year:2019,
+cost:40000 
+};
+console.log("The Car Model is " +obj.model+ obj.year);//ojectname.propertyname
+console.log(obj["cost"]);//objectname[propertyname]
+
+var obj = { name: { first:'Anita', last:'Yeluri'} };
+var copy = Object.assign({}, obj);
+
+copy.name.first ='Anantha';
+console.log(obj.name.first); 
+</script>   
+</body>
+</html>
