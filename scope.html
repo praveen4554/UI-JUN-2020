@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+<script>
+var element="Hello Class";//A variable declared outside a function, becomes GLOBAL.A global variable has global scope
+function myclass(){
+var element ="Welcome";// local variable:Varible is defined inside the function
+console.log(element);
+}
+console.log(element);
+myclass();
+
+var x;// variable is declared
+x="javascript";// variable is assigned
+function myscript(){
+var x="java";
+console.log(x);
+}
+console.log(x);
+myscript();
+//Any variable declared within a scope belongs to that scope.
+myglobal();
+console.log(z);// z becomes global variable if it is not declared
+function myglobal(){
+z="It becomes global variable if it is not declared";
+}
+
+name = "Anita"; // Assign Anita to name
+console.log(name);
+var name; // Declare name
+
+//Hoisting also affects function declarations. Functions are hoisted first, and then variables. 
+exam();            // output: Ready
+
+function exam() {
+  console.log("Ready");//function declaration
+} 
+
+var exam = function() {
+  console.log("not ready");//function expression
+};
+</script>   
+</body>
+</html>
