@@ -1,0 +1,73 @@
+body{
+    background-size: 100% 100%;
+    background:
+    linear-gradient(rgb(121, 124, 124), black);
+    font-family: "Times New Roman", Times, serif;
+    
+}
+h1{
+
+    text-align: center;
+
+}
+.container{
+    text-align: center;
+    color:greenyellow;
+    text-shadow: 2px 2px black;
+    padding:15px;
+    overflow:hidden;
+    background:
+    linear-gradient(rgb(44, 39, 42), rgb(157, 119, 167));
+    
+    
+    
+}
+
+a:link {
+    background-color: rgb(124, 226, 65);
+  }
+
+.content{
+    width:100%;
+    color:black;
+    font-size:1em;
+    
+	
+}
+.imgTop{
+  
+    max-width:300px;
+	border:3px solid rgb(54, 5, 87);
+    border-radius:10px;
+    box-shadow:10px 10px 10px rgb(191, 131, 219);
+    position: relative;
+    animation: image-fade 2s ease-in-out;
+    animation:border-change 3s infinite;
+    animation-duration: 4s;
+  animation-direction: reverse;
+}
+
+@keyframes example {
+  from {background: linear-gradient(rgb(121, 124, 124), black)};
+  to {background-color: cyan;}
+}
+@keyframes image-fade{
+    /*from{opacity:0;}
+    to{opacity:1;*/
+        from{
+            opacity:0;
+            transform:scale(.5);
+        }
+    }
+    @keyframes border-change{
+        0%{
+            box-shadow:3px 3px 3px #000;
+        }
+        50%{
+            box-shadow:30px 30px 30px #000; 
+        }
+    }
+    .imgTop:hover{
+        cursor:pointer;
+        transform: scale(1.3);
+    }
