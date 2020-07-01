@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Unique characters</title>
+        
+    </head>
+    <body>
+        <h1>Unique characters in a string</h1>
+        <h3>Enter the String :</h3><input type="text" name="inputnum" maxlength="100" required />
+        <p align = center>
+            <button type="submit" onclick = "uniqchar()">Check</button></p>
+    <script>
+        function uniqchar(str1)
+        {
+            str1 = document.getElementById("inputnum").value;
+            var str= str1;
+            var uniqstr="";
+            for(var x=0;x <str.length;x++)
+            {
+                if(uniqstr.indexOf(str.charAt(x))==-1)
+                {
+                    uniqstr +=str[x];
+
+                }
+            }
+          document.write("The Unique characters in a string are "+ uniqstr);  
+        }
+    </script>
+	</body>
+	</html>
