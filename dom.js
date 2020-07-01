@@ -17,7 +17,26 @@ function toggleTheColors() {
     //       document.getElementsByClassName("Mythri")[ele].style.color = "green";
     //       document.getElementsByClassName("Mythri")[ele].innerHTML = name;
     //   })
+    /**
+     * >
+     *  
+     * 
+     * document.querySelctor -- css combinators
+     * document.querySelectorAll
+     */
     //   document.getElementById("firstName").value = "";
+    
+    var tableJson =  [{
+      firstName:'praveen',
+      lastName:'Kumar'
+      },{
+      firstName:'praveen',
+      lastName:'Kumar'
+      },{
+      firstName:'praveen',
+      lastName:'Kumar'
+      }];
+     
       var elemnts =  document.getElementsByTagName("div");
       console.log(elemnts);
       Object.keys(elemnts).forEach((ele)=>{
