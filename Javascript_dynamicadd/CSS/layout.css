@@ -1,0 +1,44 @@
+body{
+    
+    background-image: url("../images/background.jpg");
+    color: rgb(102, 12, 12);
+    background-size: cover;
+    font-weight: bolder;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+color:lime;
+}
+/* .container{
+    max-width:1400px;
+    margin:auto;
+    color:rgb(216, 20, 20);
+    font-weight: bold;
+    min-height: 90vh;
+    padding: 15px;
+    border-left: 10px saddlebrown;
+    border-right: 10px saddlebrown;
+} */
+.addRecord{
+    background-color:whitesmoke;
+    width:80%;
+    margin: auto;
+    text-align: center;
+    border:3px solid chocolate;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.addRecord input, .addRecord span{
+    margin-right: 15px;
+    font-size:100%;
+
+}
+.btnSubmit{
+font-size: 100%;
+background:limegreen;
+color:white;
+padding:3px 10px;
+border-radius:5px ;
+}
