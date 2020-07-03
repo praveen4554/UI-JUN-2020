@@ -2,13 +2,52 @@
 <html lang="en">
 	<head>
 		<title>Amar Table</title>    		
-		<link rel="stylesheet" href="./tableStyleAmar.css">
-		<link rel="shortcut icon" type="image/ico" href="./iconAmar.ico" />
+		<link rel="stylesheet" href="css/tableStyleAmar.css">
+		<link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
 	</head>
 	<body>
+		<script>
+			"use strict";			
+			function addNewTableRows(){				
+				var myMovies = [
+					{'Movie': 'Penguin', 'under 12': '$3', 'Adult': '$15', 
+					'Military': '$11', 'Students': '$12', 'Date': '07/03/2020', 
+					'Time': '11 a.m. 3 p.m. 10 p.m.', 'Theatres': 'Ritz'}
+            
+				]
+				var col = [];  //Extracting Json Data into this array by checking first key index using loop
+					for (var i = 0; i < myMovies.length; i++) {
+						for (var key in myMovies[i]) {
+							if (col.indexOf(key) === -1) {
+								col.push(key);
+							}
+						}
+					}
+				var tbA = document.getElementById("amarTable");				
+				console.log(tbA);					
+				var trA = document.getElementsByTagName("tr").value;
+				for (var i = 0; i < myMovies.length; i++) {
+					trA = tbA.insertRow(-1);                    //Table row
+					for (var j = 0; j < col.length; j++) {
+						var tabCell = trA.insertCell(-1);
+						tabCell.innerHTML = myMovies[i][col[j]]; // Getting Movie details for each header						
+					}
+				}								
+				var elemnts = document.getElementsByTagName("div");
+				console.log(elemnts);
+				Object.keys(elemnts).forEach((ele)=>{
+					document.getElementsByTagName("div")[ele].style.color = "red";					
+					//document.getElementsByTagName("div")[ele].setAttribute('class','amarTB')
+				})
+			}					
+        </script>
+        <noscript>
+            Sorry the browser doesn't support javascript
+        </noscript>
 		<h1 class="center">Movies</h1>
-		<div class="amarTB">
-			<table >
+		<button onclick="addNewTableRows()">Toggle</button>
+		<div class="amarTB" id="amarDivId">
+			<table id="amarTable">
 				<caption>Telugu Movie Details</caption>
 				<thead>
 					<tr>
