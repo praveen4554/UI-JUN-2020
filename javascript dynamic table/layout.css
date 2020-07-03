@@ -1,0 +1,63 @@
+body{
+background-image:url(./images/travel.jpg);
+background-size: cover;
+opacity:2;
+z-index:-1;
+font-family: 'Times New Roman', Times, serif;
+font-size: medium;
+padding: 10px;
+margin:10px;
+}
+
+.container>h1{
+    text-align:center;
+    font-weight: bold;
+}
+label{
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#btnSubmit{
+    display:inline-block;
+    margin: 0 auto;
+}
+#btnSubmit:hover{
+    cursor: pointer;
+}
+#get{
+    display:block;
+    margin:0 auto;
+    background-image: linear-gradient(orange,lightpink,purple,lightblue);
+    width:350px;
+    height:150px;
+    padding:5px;
+    border-color: black;
+    border: black;
+    padding-top:10px;
+    z-index: 2;
+    padding-left:10px;
+}
+
+
+#tableMain{
+    width:80%;
+    margin:50px auto;
+    border-collapse: collapse;
+    font-size: 110%;
+    font-weight: bold;
+}
+#tableMain td{
+    border:1px solid #ccc;
+    padding: 5px;
+
+}
+#tableMain th{
+    text-align:left;
+    padding: 5px;
+    color:rgb(14, 12, 12);
+    font-weight: bold;
+}
+#tableMain tr:nth-child(even){
+    background-color: lightblue;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+        <title>Travel Club Member's List</title>
+        <link rel="stylesheet" href="layout.css"/>
+    </head>
+        <body>
+<div class="container">
+    <h1>
+        <img id="img1" src="images/travel.png" width="40"/>
+        Travel Club Member's List
+
+    </h1>
+<div class="container">
+<form onsubmit="addRow()">
+    <table id="get">
+    <tbody>
+    <tr>
+    <td><label>First Name</label></td>
+    <td><input type="text" id="txtFirstName" size="30" required/></td>
+    </tr><br>
+    <tr>
+    <td><label>Last Name</label></td>
+    <td><input type="text" id="txtLastName" size="30" required/></td>
+    </tr><br>
+    <tr>
+    <td><label>Email</label></td>
+    <td><input id="txtEmail" type="email" size="30" required/></td></tr>
+    <tr><td><button type="submit" class="btnSubmit" id="btnSubmit">
+        Register
+    </button></td></tr>
+    </tbody>
+    </table>
+    </form>
+</div>
+<table id="tableMain">
+    <tr>
+<th>First Name</th>
+<th>Last Name </th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</table>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
