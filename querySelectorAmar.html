@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+
+<html >
+	<head> 
+		<meta charset="utf-8">
+        <title>Amar Control Placeholder</title>
+        <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+		<script type="text/javascript">
+			function myFunction() {
+                // var matches = document.querySelectorAll("p");
+                // var matches = document.querySelectorAll("div.note, div.alert");
+                // var container = document.querySelector("#test");
+                // var matches = container.querySelectorAll("div.highlighted > p");
+                // var matches = document.querySelectorAll("iframe[data-src]");
+                // var container = document.querySelector("#userlist");
+                // var matches = container.querySelectorAll("li[data-active='1']");
+
+
+                // var highlightedItems = userList.querySelectorAll(".highlighted");
+                // highlightedItems.forEach(function(userItem) {
+                // deleteUser(userItem);
+                // });
+
+                var select = document.querySelector('.select');
+                var inner = select.querySelectorAll('.outer .inner');
+                var matches = inner.length; // 1, not 0!
+
+                // var select = document.querySelector('.select');
+                // var inner = select.querySelectorAll(':scope .outer .inner');
+                // var matches = inner.length; // 0
+                console.log(select);
+                console.log(inner);
+                console.log(matches);
+                result='<p> Length of the Node List: ' +matches+ '</p>';
+                //result+='<p> Reverse String: ' +s+ '</p>';
+                document.getElementById( "demo").innerHTML=result;
+                
+                // var x, i;
+                // x = document.querySelectorAll(':scope div.outer');
+                // x[0].style.backgroundColor = "red";
+                // for (i = 0; i < x.length; i++) {
+                //     x[i].style.backgroundColor = "red";
+                // }
+            }            			
+		</script> 
+	</head>
+	<body>
+        <!-- <div class="container"> -->
+            <div class="outer">
+                <!-- abc
+                <p class="container">
+                    <span>Amar span 1</span> 
+                    Amar outer 1</p>
+                <p>Amar outer 2</p>
+                <p>Amar outer 3</p> -->
+                <div class="select">
+                    <!-- <div></div>
+                    <span>Amar select 1</span>
+                    <span>Amar select 2</span>
+                    <span>Amar select 3</span> -->
+                    <div class="inner">
+                        <!-- <p>Amar inner 1</p>
+                        <p>Amar inner 2</p>
+                        <p>Amar inner 3</p>  -->
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <button onclick="myFunction()">Try it</button>        		
+        <p id="demo"></p>
+	</body>
+</html>
