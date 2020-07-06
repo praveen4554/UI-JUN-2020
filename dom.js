@@ -49,7 +49,7 @@ function toggleTheColors() {
     var btn = document.createElement("button");
     btn.textContent = "submit";
     displayElement.appendChild(btn);
-    document.getElementsByTagName("body")[0].removeChild(displayElement);
+    //document.getElementsByTagName("body")[0].removeChild(displayElement);
         // elemnts.forEach((ele)=>{
     //      ele.style.color="red";
     //  })
