@@ -1,0 +1,61 @@
+/* button, input, select, textarea {
+    
+  } */
+body {
+font  : 1.3rem sans-serif;
+padding : 0.5em;
+margin  : 0;
+background : #222;
+}
+form {
+position : relative;
+width  : 98%;
+height : 100%;
+margin : 0 auto;
+padding: 1em;
+/* box-sizing: border-box; */
+background : #FFF;
+
+/* we create our grid */
+display  : grid;
+grid-gap : 5px;
+grid-template-columns : repeat(3, 1fr);
+/* grid-template-rows    : 10em 1em 1em 1em; */
+}
+input, textarea, select, button {
+width : 150px;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+/* font-family: inherit;
+font-size: 100%; */
+}
+fieldset {
+position: relative;
+}
+
+legend {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+button {
+padding      : 5px;
+font         : bold .6em sans-serif;
+border       : 2px solid #333;
+border-radius: 5px;
+background   : none;
+cursor       : pointer;
+transform    : rotate(-0deg);
+}
+
+button:after {
+content      : " >>>";
+}
+
+button:hover,
+button:focus {
+outline     : none;
+background  : #000;
+color       : #FFF;
+}

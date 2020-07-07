@@ -47,18 +47,21 @@
 				    result+='<tr><td>' +nc+'</td><td>' +square(nc) +'</td>     <td>'+cube(nc) +'</td></tr>';
                 result+='</table>'; 
 				document.getElementById( "demo").innerHTML=result;
-				}
-				
+				}	
 				
 				function square(inum) { 
 							return inum*inum;   
 					} 
 
-					function cube(inum){ 
-							return Math.pow(inum,3); 
-					} 
-
-			}
+                function cube(inum){ 
+                        return Math.pow(inum,3); 
+                } 
+                // function abc() {
+                //     for(var i=0;i<5;i++){}console.log(i);
+                //     for(var j in a){
+                //         console.log('index'+j+'value'+a[j]);
+                //     }
+            }			
 		</script> 
 	</head>
 	<body>

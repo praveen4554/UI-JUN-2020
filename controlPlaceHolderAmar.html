@@ -1,0 +1,34 @@
+<!DOCTYPE html >
+
+<html >
+	<head> 
+		<meta charset="utf-8">
+        <title>Amar Control Placeholder</title>
+        <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+		<script type="text/javascript">
+			function myFunction() {
+                //var ph = /^(\+?\d*)\((\d*)\)(\d*)-?(\d*)-?(\d*)$/;
+                //var ph2 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                var na = document.getElementById("txt1").value;                 
+                if(na.length==10) {
+                    return false;
+                }
+                console.log(na);
+                var res = "(" + na.slice(0,3) + ")" + " " + na.slice(3, 6) + "-" + na.slice(6, 10);                
+                //console.log(res);                                             
+                result='<p> Phone number taken as: ' +res+ '</p>';             
+                document.getElementById( "demo").innerHTML=result;
+                }            			
+		</script> 
+	</head>
+	<body>
+		<br/>
+		<br/>
+			Enter the Phone number: <input type="number" id="txt1" placeholder="phone number" name="text1"  onkeypress="javascript:return myFunction()" oninput=""/> 
+        <br/>
+        <br/>
+        <br/>
+        <br/>	
+        <p id="demo"></p>
+	</body>
+</html>

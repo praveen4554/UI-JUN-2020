@@ -1,0 +1,208 @@
+.container {    
+    
+    display: -ms-grid; 
+    display: grid;    
+    /* -ms-grid-columns: 100px 0px 100px 0px 100px 0px;
+    -ms-grid-rows: 100px 0px 100px 0px 100px 0px 200px;
+    grid-auto-rows: 100px 0px 100px 0px 100px 0px 100px;
+    grid-template-columns: 100px 0px 100px 0px 100px 0px;  */
+    -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr;
+    grid-template-columns: 1fr 0px 1fr 0px 1fr 0px 1fr;
+    /* IE repeat syntax
+    -ms-grid-columns: 1fr (0px 1fr)[3];       
+    /* Modern repeat syntax 
+    grid-template-columns: 1fr repeat(3, 0px 1fr);    */
+    border-radius: 5px;
+    color: #fff;
+    
+}
+.column {
+    background-color: rgb(10, 1, 1);
+    color: rgb(247, 240, 242);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%
+    
+}
+.a {
+    grid-row: 1;
+    /* grid-column: 5; */
+    grid-column-start: 1;
+    grid-column-end: 7;    
+    -ms-grid-row: 1;
+    /* -ms-grid-column: 1;  */
+    -ms-grid-column-span: 5;
+    text-align: center; 
+    border: 1px red solid;  
+    padding: 35px 0; 
+    font-weight: bold;
+} 
+.b {
+    grid-row: 3;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.c {
+    grid-row: 3;
+    grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.d {
+    grid-row: 3;
+    grid-column: 5;
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.e {
+    grid-row: 5;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.f {
+    grid-row: 5;
+    grid-column: 3;
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.g {
+    grid-row: 5/9;
+    grid-column: 7;
+    /* grid-row-start: 5;
+    grid-row-end: 5; */
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 7;
+    text-align: center;
+    border: 1px red solid;
+    padding: 80px 0; 
+} 
+.h {
+    grid-row: 7;
+    grid-column: 1;
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.j {
+    grid-row: 7;
+    grid-column: 3;
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+} 
+.k {
+    grid-row: 9;
+    grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;    
+    -ms-grid-row: 9;
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 1;
+    text-align: center; 
+    border: 1px red solid;  
+    padding: 35px 0; 
+    font-weight: bold; 
+
+}  
+.l {
+    grid-row: 9;
+    grid-column: 3; 
+    grid-column-start: 3;
+    grid-column-end: 5;    
+    -ms-grid-row: 9;
+    -ms-grid-column: 3; 
+    -ms-grid-column-span: 1;
+    text-align: center; 
+    border: 1px red solid;  
+    padding: 35px 0;  
+
+}  
+.m {
+    grid-row: 9;
+    grid-column: 5; 
+    grid-column-start: 5;
+    grid-column-end: 7;    
+    -ms-grid-row: 9;
+    -ms-grid-column: 5;  
+    -ms-grid-column-span: 1;
+    text-align: center; 
+    border: 1px red solid;  
+    padding: 35px 0;  
+    font-weight: bold;
+
+}  
+.n {
+    grid-row: 9;
+    grid-column: 7; 
+    grid-column-start: 7;
+    grid-column-end: 9;    
+    -ms-grid-row: 9;
+    -ms-grid-column: 7;  
+    -ms-grid-column-span: 1;
+    text-align: center; 
+    border: 1px red solid;  
+    padding: 35px 0;  
+
+} 
+.p {
+    grid-row: 7;
+    grid-column: 5;
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+    font-weight: bold;
+} 
+.q {
+    grid-row: 5;
+    grid-column: 5;
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+}  
+.r {
+    grid-row: 3;
+    grid-column: 7;
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+    font-weight: bold;
+} 
+.s {
+    grid-row: 1;
+    grid-column: 7;
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    text-align: center;
+    border: 1px red solid;
+    padding: 35px 0; 
+    font-weight: bold;
+} 
+

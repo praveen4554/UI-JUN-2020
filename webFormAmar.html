@@ -4,50 +4,53 @@
    <head>
       <meta charset="utf-8">
       <title>AmarFirstWebPage</title>
+      <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+      <link rel="stylesheet" href="css/webFormAmar.css">
    </head>
    <body>
-      <h1>Web Form </h1>
-        <fieldset align="left" >
-            <legend style="color: red" align="center">
-                <big>FILL</big> <small>INFO</small>
+      <h1 style= color:aqua align="center">Web Form </h1>
+        <fieldset  >
+            <legend >
+                <!-- <big>FILL INFO..........!</big>  -->
+                <!-- <small>INFO</small> -->
             </legend>
             <form>
-                <p>
+                <div>
                     <label>
                         First name:
                         <input type="text" id="firstname" value="Amar"
                                placeholder="First Name" /> (First name)
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>
                         Last name:
                         <input type="text" id="lastname"
                                placeholder="Last name" /> (Last name)
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>
                         E-mail address:
                         <input type="email" id="email"
                                placeholder="name@domain.com" required /> (name@domain.com)
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>
                         Phone number:
                         <input type="tel" placeholder="(###) ###-####"
                                pattern="\(\d{3}\)+\d{3}-\d{4}" />
                         (732)111-2222
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>
                         Date of Birth:
                         <input type="date" required />
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>
                         Current State:
                         <select>
@@ -65,11 +68,31 @@
                             <option value="VA">VA</option>
                         </select>
                     </label>
-                </p>
-                <p>
+                </div>
+               
+                <fieldset >
+                    <legend>Age group</legend> 
+                    <div>
+                        <input type="radio" name="age" id="AG1" value="<20" />
+                        <label for="AG1">younger than 20</label>
+                    </div> 
+                    <div>
+                        <input type="radio" name="age" id="AG2" value="20-40" />
+                        <label for="AG2">20-40</label>
+                    </div> 
+                    <div>
+                        <input type="radio" name="age" id="AG3" value="41-60" />
+                        <label for="AG3">41-60</label>
+                    </div> 
+                    <div>
+                        <input type="radio" name="age" id="AG4" value=">60" />
+                        <label for="AG4">60 or older</label>
+                    </div>     
+                </fieldset> 
+                <div>
                     <label>
                         Countries Travelled:
-                        <select multiple>
+                        <select multiple >
                             <option value="USA" selected>USA</option>
                             <option value="AF">Africa</option>
                             <option value="CU">Cuba</option>
@@ -84,42 +107,44 @@
                             <option value="VA">Vatican City</option>
                         </select>
                     </label>
-                </p>
-                <fieldset >
-                    <legend>Age group:</legend>           
-                        <input type="radio" name="age" id="AG1" value="<20" />
-                        <label for="AG1">younger than 20</label>
-                        <br><input type="radio" name="age" id="AG2" value="20-40" />
-                        <label for="AG2">20-40</label>
-                        <br><input type="radio" name="age" id="AG3" value="41-60" />
-                        <label for="AG3">41-60</label>
-                        <br><input type="radio" name="age" id="AG4" value=">60" />
-                        <label for="AG4">60 or older</label>                    
-                </fieldset>     
-                <p>
-                    Membership:
+                </div>
+                <fieldset>    
+                Membership:
+                <div id="aa">
                     <input type="checkbox" name="MS" value="AAA " id="AAA" />
                     <label for="AAA"> AAA</label>
+                </div>
+                <div id="cosco">
                     <input type="checkbox" name="MS" value="Costco" id="Costco">
                     <label for="Costco"> Costco</label>
+                </div>
+                <div id="eee">
                     <input type="checkbox" name="MS" value="IEEE" id="IEEE">
                     <label for="IEEE"> IEEE</label>
+                </div>
+                <div id="am">
                     <input type="checkbox" name="MS" value="ACM" id="ACM">
                     <label for="ACM"> ACM</label>
-                </p>
-                <p>
+                </div>  
+            </fieldset>
+                <!-- <div class="comments">
                     <label>
                         Comments:
                         <br><textarea rows="5" cols="30"> </textarea>
                     </label>
-                </p>
-                <p>
-                    <input type="submit" style="color:aqua" value="Submit" />
-                    <input type="reset" style="color:blueviolet" value="Reset" />
-                </p>
+                </div>                 -->
+                <div class="button">
+                <button type="submit">Submit</button>
+                </div> 
+               <div>
+                <button type="reset">Reset</button>
+               </div>     
             </form>
         </fieldset>
-        <footer style="color:red" align="center">&copy;Designed by Amar</footer>
+        <div>
+
+        </div>
+        <footer style="color:rgb(255, 0, 242)" align="center">&copy;Designed by Amar</footer>
    </body>
 </html>
 

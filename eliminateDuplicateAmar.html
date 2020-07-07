@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+
+<html >
+	<head> 
+		<meta charset="utf-8">
+        <title>Amar Duplicate</title>
+        <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+		<script type="text/javascript">
+
+			function myFunction() {
+                var na =[];
+                na.push(document.getElementById("txt1"));
+                var na = document.getElementById("txt1").value; 
+                var na = [0,1,2,3,4,5,6,7,8,9] ;             
+                if ( na == false) {
+                    document.write('Please refresh browser and enter an Array [] ........!');
+                    }
+				else { 
+                    function uniq(na) {
+                        var seen = {};
+                        return na.filter(function(item) {
+                            return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+                        });
+
+                    }
+                    na = uniq(na);
+                    function removeDuplicate(na) {
+                            var seen = {};
+                            var out = [];
+                            var j = 0;
+                            for(var i = 0; i < na.length; i++) {
+                                var item = na[i];
+                                if(seen[item] !== 1) {
+                                    seen[item] = 1;
+                                    out[j++] = item;
+                                }
+                            }
+                            return out;
+                        } 
+                        na = removeDuplicate(na);                         
+                        console.log(na);                                                                
+                    }
+                    var r = [0,1,2,3,4,5,6,7,8,9],
+                        a = [],
+                        LEN = 1000,
+                        LOOPS = 1000;
+
+                    while(LEN--)
+                        a = a.concat(r);
+
+                    var d = new Date();
+                    for(var i = 0; i < LOOPS; i++)
+                        uniq(a);
+                    document.write('<br>uniq, ms/loop: ' + (new Date() - d)/LOOPS)
+
+                    var d = new Date();
+                    for(var i = 0; i < LOOPS; i++)
+                    removeDuplicate(a);
+                    document.write('<br>uniq_fast, ms/loop: ' + (new Date() - d)/LOOPS)
+                result='<p> Removed duplicates: ' +na+ '</p>'; 
+                //result+='<p> uniq, ms/loop: ' + (new Date() - d)/LOOPS + '</p>';
+                //result+='<p> uniq_fast, ms/loop: ' + (new Date() - d)/LOOPS + '</p>';
+                document.getElementById( "demo").innerHTML=result;
+                }            			
+		</script> 
+	</head>
+	<body>
+		<br/>
+		<br/>
+			Enter the String: <input type="text" id="txt1" name="text1"> 
+			<!-- Enter second number: <input type="text" id="txt2" name="text2">
+			Enter third number: <input type="text" id="txt3" name="text3"> -->
+		<p>Click the button to remove the duplicates</p>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+	</body>
+</html>

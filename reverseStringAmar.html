@@ -1,0 +1,49 @@
+<!DOCTYPE html >
+
+<html >
+	<head> 
+		<meta charset="utf-8">
+        <title>Amar Calculation</title>
+        <link rel="shortcut icon" type="image/ico" href="img/iconAmar.ico" />
+		<script type="text/javascript">
+
+			function myFunction() {
+                var na = document.getElementById("txt1").value;
+                str = '', s = '';                
+                if (na==false) {
+				document.write('Please refresh browser and enter something ........!');
+				}
+				else {
+                    function reverse1(na){
+  var  len = na.length, r = "";
+  for(var i = 0; i <= len-1; i++){
+    r = r + na[len-i-1];
+  }
+  return r;
+}
+na = reverse1(na);
+console.log(na);
+
+                    // for( var i=0; i<na.length; i++ ){                        
+                    //         str += na[i];
+                    //         s=str.split('').reverse().join('');                        
+                    //         console.log("-" + s);                           
+                    }
+                result='<p> Provided String: ' +na+ '</p>';
+                result+='<p> Reverse String: ' +s+ '</p>';
+                document.getElementById( "demo").innerHTML=result;
+                }				
+            		
+		</script> 
+	</head>
+	<body>
+		<br/>
+		<br/>
+			Enter the String: <input type="text" id="txt1" name="text1"> 
+			<!-- Enter second number: <input type="text" id="txt2" name="text2">
+			Enter third number: <input type="text" id="txt3" name="text3"> -->
+		<p>Click the button to reverse the string</p>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+	</body>
+</html>
