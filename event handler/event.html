@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>Event Handler</title>
+</head>
+<body>
+<div id = "box"><span id = "dot"><span id="inner"></span></span></div>
+<div id = "box1"><span id = "dot1"><span id="inner1"></span></span></div>
+<div id = "box3"><span id = "dot3"><span id="inner3"></span></span></div>
+
+<script>
+document.getElementById("box").addEventListener("click", function(){document.getElementById("box").style.backgroundColor="pink";}, false );
+document.getElementById("dot").addEventListener("click", function(){document.getElementById("dot").style.backgroundColor="navy";}, false);
+document.getElementById("inner").addEventListener("click", function(){document.getElementById("inner").style.backgroundColor="lightgreen";}, false);
+document.getElementById("box1").addEventListener("click", function(){document.getElementById("box1").style.backgroundColor="pink";}, true );
+document.getElementById("dot1").addEventListener("click", function(){document.getElementById("dot1").style.backgroundColor="navy";}, true);
+document.getElementById("inner1").addEventListener("click", function(){document.getElementById("inner1").style.backgroundColor="lightgreen";},true);
+document.getElementById("box3").addEventListener("click", function(){document.getElementById("box3").style.backgroundColor="pink";}, false );
+document.getElementById("dot3").addEventListener("click", function(){document.getElementById("dot3").style.backgroundColor="navy";}, true);
+document.getElementById("inner3").addEventListener("click", function(){document.getElementById("inner3").style.backgroundColor="lightgreen";},false);
+let element = document.querySelector("#inner3");
+element.addEventListener("click", function(e){e.preventDefault}, true);
+
+</script>
+</body>
+</html>
