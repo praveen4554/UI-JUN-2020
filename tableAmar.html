@@ -12,7 +12,7 @@
 				var myMovies = [
 					{'Movie': 'Penguin', 'under 12': '$3', 'Adult': '$15', 
 					'Military': '$11', 'Students': '$12', 'Date': '07/03/2020', 
-					'Time': '11 a.m. 3 p.m. 10 p.m.', 'Theatres': 'Ritz'}
+					'Time': '11 a.m. </br> 3 p.m. </br> 10 p.m.', 'Theatres': 'Ritz'}
             
 				]
 				var col = [];  //Extracting Json Data into this array by checking first key index using loop
@@ -37,7 +37,7 @@
 				console.log(elemnts);
 				Object.keys(elemnts).forEach((ele)=>{
 					document.getElementsByTagName("div")[ele].style = "color:rgb(255, 0, 242)";					
-					//document.getElementsByTagName("div")[ele].setAttribute('class','amarTB')
+					document.getElementsByTagName("div")[ele].setAttribute('class','amarTB')
 				})
 			}					
         </script>
