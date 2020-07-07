@@ -68,3 +68,12 @@ function phoneFormat(){
     }
 }
 // console.log(a);
+
+
+    var displayElement = document.getElementById("display");
+    var btn = document.createElement("button");
+    btn.textContent = "submit";
+    btn.addEventListener("click",function(){
+        alert('creating a function');
+    },true);
+    displayElement.appendChild(btn);

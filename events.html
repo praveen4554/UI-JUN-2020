@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./animation.css">
+        <script>
+        </script>
+        <style>
+          .parent {
+              display: inline-block;
+              width:500px;
+              height: 500px;
+              border: 1px solid;
+          }
+          .child {
+              display: inline-block;
+              width:300px;
+              height: 300px;
+              border:1px solid;
+          }
+
+          .grandChild {
+              display: inline-block;
+              width:100px;
+              height: 100px;
+              border:1px solid;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="parent" onclick="parent(event)">
+            parent
+            <div class="child" onclick="child(event)">
+                child
+                <div class="grandChild" onclick="grandChild(event)">
+                    grandChild
+                </div>
+            </div>
+        </div>
+        <form method="post" onsubmit="formSubmit(event)">
+            <input type="text"/>
+            <input type="submit"/>
+        </form>
+        <script src="./events.js">
+        </script>
+        <noscript>
+            Sorry the browser doesn't support javascript
+        </noscript>
+        </body>
+</html>
