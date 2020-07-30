@@ -1,21 +1,43 @@
 import React from 'react';
 import Child from './ChildComponent';
+import FormValidations from './FormValidations';
 
 export class TestComponent extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            firstName: 'praveen'
+            firstName: 'praveen',
+            personalInfo: {
+                firstName: '',
+                lastName: ''
+            }
         }
         this.update = this.update.bind(this);
     }
       update = function(val) {
          console.log('test');
-        // this.props.test('V3');
+       // this.props.testName('V3');
+       /**
+        * checkout - class component
+         state
+         this.state = {
+             personalInfo:{
+                 firstName:''
+             },
+             addressInfo: {
+
+             }
+         }
+          personal ,add,credit,billing add,t&C - functional
+
+        */
         this.setState({firstName: val});
          //this.state.firstName = 'V3'; diffing algorithm 
         // this.forceUpdate();
          console.log(this.state);
+     }
+     updatePersonalInfo(){
+         
      }
     render(){
         console.log(this.props);
@@ -27,7 +49,7 @@ export class TestComponent extends React.Component {
               <p>
                 state value: {this.state.firstName}
               </p>
-              <Child updateCall={this.update}/>
+             <FormValidations/>
             </div>
         )
     }
