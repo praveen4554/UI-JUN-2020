@@ -1,4 +1,5 @@
 import React from "react";
+import { InputComponent } from './InputComponent';
 
 export default class FormValidations extends React.Component {
   constructor() {
@@ -12,6 +13,10 @@ export default class FormValidations extends React.Component {
     };
     this.submit = this.submit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+        this.child2 = React.createRef();
+  }
+  componentDidMount(){
+    this.child2.current.disabled = true;
   }
   handleChange(event) {
       const keyError = `${event.target.name}Error`
@@ -45,13 +50,14 @@ export default class FormValidations extends React.Component {
           ""
         )}
         <br />
-        <input type="text" name="lacoation" onChange={this.handleChange} />
+        <input type="text" id="fName" ref={this.child2} name="lacoation" onChange={this.handleChange} />
         {this.state.lastNameError ? (
           <div>lastName shoulbe greater than or equl to 6</div>
         ) : (
           ""
         )}
         <br />
+              <InputComponent ref={this.child2} placeholder="child1"/>
         <input type="submit" onClick={event => this.submit(event)} />
       </form>
     );

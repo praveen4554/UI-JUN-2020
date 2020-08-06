@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { TestComponent } from './TestComponent';
 import FuncComponent from './FuncComponent';
 function App() {
-  let name = "praveen";
-  // const testName = (val)=>{
-  //   name = val;
-  // }
-  // const obj = {
-  //   firstName: 'praveen',
-  //   lastName:  'kumar'
-  // }
+  const [name, setName] = useState('');
+     const testName = (val)=>{
+    // obj.firstName = val;
+    setName(val);
+  }
+  const obj = {
+    firstName: 'praveen',
+    lastName:  'kumar'
+  }
   return (
     <div className="App">
      
@@ -21,7 +22,7 @@ function App() {
       <div>
       praveen
       </div>
-      <FuncComponent/>
+     <TestComponent data={obj} name={name} test={testName}/>
     </div>
   );
 }
