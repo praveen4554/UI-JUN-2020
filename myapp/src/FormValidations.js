@@ -1,9 +1,10 @@
 import React from "react";
 import { InputComponent } from './InputComponent';
+import { connect } from 'react-redux';
 
-export default class FormValidations extends React.Component {
-  constructor() {
-    super();
+class FormValidations extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {
       firstName: "",
       lasttName: "",
@@ -33,8 +34,12 @@ export default class FormValidations extends React.Component {
     });
   }
   render() {
-    console.log(this.state);
     return (
+      <div>
+      {this.props.userName}
+      <div>
+        <button onClick={()=>this.props.changeUser(this.state.firstName)}>changeUser</button>
+      </div>
       <form>
         <input type="text" name="firstName" onChange={this.handleChange} />
         {this.state.firstNameError ? (
@@ -60,6 +65,21 @@ export default class FormValidations extends React.Component {
               <InputComponent ref={this.child2} placeholder="child1"/>
         <input type="submit" onClick={event => this.submit(event)} />
       </form>
+      </div>
     );
   }
 }
+const mapStateToProps = (state) =>{
+  console.log(state);
+  return {
+    userName: state.userName
+  }
+}
+
+const mapDispatchToProps = (dispatch) =>{
+  return {
+    changeUser: (val) => dispatch({type:'changeUser', value:val})
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(FormValidations);

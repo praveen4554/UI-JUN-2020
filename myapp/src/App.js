@@ -3,7 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import { TestComponent } from './TestComponent';
 import FuncComponent from './FuncComponent';
-function App() {
+import HooksComponent from './HooksComponent';
+import FormValidations from './FormValidations';
+import { connect } from 'react-redux';
+function App(props) {
   const [name, setName] = useState('');
      const testName = (val)=>{
     // obj.firstName = val;
@@ -15,16 +18,30 @@ function App() {
   }
   return (
     <div className="App">
-     
+     Authorized user: {props.userName}
       <p>
       parent component value: {name}
       </p>
       <div>
       praveen
       </div>
-     <TestComponent data={obj} name={name} test={testName}/>
+      <FormValidations/>
+      <HooksComponent/>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) =>{
+  console.log(state);
+  return {
+    userName: state.userName
+  }
+}
+
+const mapDispatchToProps = (dispatch) =>{
+  return {
+    changeUser: (val) => dispatch({type:'changeUser', value:val})
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
